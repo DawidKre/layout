@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+/Theming - Semantic_files/
+/semantic-github/
+/semantic/
+all.html
+index2.html
+index-copy.html
+semantic.json
+Theming - Semantic.html
+.gitignore
+.idea/
+css/
+js/
+node_modules/
+Would skip repository semantic-github/
