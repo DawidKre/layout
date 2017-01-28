@@ -51,7 +51,7 @@ body {
 }
 
 #v-nav > ul > li h4 i {
-    margin-right: 20px;
+    margin-right: 5%;
 }
 
 #v-nav > ul > li a {
@@ -192,6 +192,9 @@ body {
     touch-action: manipulation;
     text-align: center;
 }
+.button-add-width {
+    max-width: 150px !important;
+}
 .button-add:hover {
     background: -webkit-linear-gradient(top,#2196f3,#1976d2);
     background: linear-gradient(180deg,#2196f3,#1976d2);
@@ -278,3 +281,5 @@ input, textarea, .selection , .dropdown {
     transform: rotate(90deg);
     transition-duration: 0.4s;
 }
+
+

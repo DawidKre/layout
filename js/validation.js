@@ -1,14 +1,14 @@
 $(function () {
 
-    $('#offer-form')
-        .form({
+    $( '#offer-form' )
+        .form( {
             fields: {
                 name: {
                     identifier: 'name',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Podaj nazwe oferty'
+                            type: 'empty',
+                            prompt: 'Podaj nazwe oferty'
                         }
                     ]
                 },
@@ -16,8 +16,8 @@ $(function () {
                     identifier: 'marks',
                     rules: [
                         {
-                            type   : 'minCount[2]',
-                            prompt : 'Wybierz conajmniej dwie marki'
+                            type: 'minCount[2]',
+                            prompt: 'Wybierz conajmniej dwie marki'
                         }
                     ]
                 },
@@ -25,8 +25,8 @@ $(function () {
                     identifier: 'phone',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Podaj numer telefonu'
+                            type: 'empty',
+                            prompt: 'Podaj numer telefonu'
                         }
                     ]
                 },
@@ -34,8 +34,8 @@ $(function () {
                     identifier: 'adress',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Podaj adres'
+                            type: 'empty',
+                            prompt: 'Podaj adres'
                         }
                     ]
                 },
@@ -43,12 +43,12 @@ $(function () {
                     identifier: 'adress-code',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Podaj adres'
+                            type: 'empty',
+                            prompt: 'Podaj adres'
                         },
                         {
-                            type   : 'number',
-                            prompt : 'Zły format liczby'
+                            type: 'number',
+                            prompt: 'Zły format liczby'
                         }
                     ]
                 },
@@ -56,8 +56,8 @@ $(function () {
                     identifier: 'localization',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Wybierz lokalizacje'
+                            type: 'empty',
+                            prompt: 'Wybierz lokalizacje'
                         }
                     ]
                 },
@@ -65,8 +65,8 @@ $(function () {
                     identifier: 'zip',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Wpisz kod pocztowy'
+                            type: 'empty',
+                            prompt: 'Wpisz kod pocztowy'
                         }
                     ]
                 },
@@ -74,8 +74,8 @@ $(function () {
                     identifier: 'city',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Wpisz miejscowość'
+                            type: 'empty',
+                            prompt: 'Wpisz miejscowość'
                         }
                     ]
                 },
@@ -83,8 +83,8 @@ $(function () {
                     identifier: 'categories',
                     rules: [
                         {
-                            type   : 'minCount[1]',
-                            prompt : 'Wybierz conajmniej jedną kategorie'
+                            type: 'minCount[1]',
+                            prompt: 'Wybierz conajmniej jedną kategorie'
                         }
                     ]
                 },
@@ -92,16 +92,14 @@ $(function () {
                     identifier: 'description',
                     rules: [
                         {
-                            type   : 'empty',
-                            prompt : 'Wpisz opis firmy'
+                            type: 'empty',
+                            prompt: 'Wpisz opis firmy'
                         }
                     ]
                 }
-                
             },
-            
-            inline : true,
-            on     : 'submit'
-        })
+            inline: true,
+            on: 'submit'
+        } )
     ;
-});
+} );

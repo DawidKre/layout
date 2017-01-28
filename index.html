@@ -10,6 +10,7 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/semantic.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css">
     <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <script src="js/semantic.js"></script>
     <script src="js/scripts.js"></script>
@@ -96,10 +97,10 @@
 <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
         <div class="row" style="padding-top: 0">
-            <div class="column">
                 <section id="wrapper" class="wrapper" style="padding-top: 0">
                     <div id="v-nav">
-                        <ul class="left">
+                        <!--MAIN LEFT NAVIGATION-->
+                        <ul class="left fluid ">
                             <li tab="tab1" class="item">
                                 <a class="" href="#tab1">
                                     <div class="ui grid">
@@ -136,6 +137,9 @@
                                 </a>
                             </li>
                         </ul>
+                        <!--END MAIN LEFT NAVIGATION-->
+                        
+                        <!----------CONTENT TABS START------------>
                         <!--MOJE OFERT-->
                         <div class="tab-content">
                             
@@ -144,13 +148,13 @@
                                 <div class="row">
                                     <div class="left floated column left aligned ui dividing header">
                                         <div class="ui grid">
-                                            <div class="nine wide column left floated">
+                                            <div class="ten wide column left floated">
                                                 <h1 class="left floated column ">
                                                     Moje oferty
                                                 </h1>
                                             </div>
-                                            <div class="three wide column right aligned">
-                                                <button id="offer-add" class="button-add button primary">
+                                            <div class="six wide column right aligned">
+                                                <button id="offer-add" class="button-add button-add-width button primary">
                                                     Dodaj oferte
                                                 </button>
                                             </div>
@@ -160,156 +164,108 @@
                             </div>
                             
                             <div class="ui grid margin-bottom">
-                                <form>
-                                <div class="ui basic right labeled dropdown icon button marks-checkbox2">
-                                    <i class="dropdown icon"></i>
-                                    <span class="ui tiny header">Filter</span>
-                                    <div class="menu">
-                                        <div class="ui icon search input">
-                                            <i class="search icon"></i>
-                                            <input type="text" name="Search" placeholder="Search&hellip;">
-                                        </div>
-                                        <div class="scrolling menu">
-                                            <div class="ui item checkbox" data-value="item1">
-                                                <input type="checkbox" name="item1">
-                                                <label>First item</label>
-                                            </div>
-                                            <div class="ui item checkbox" data-value="item2">
-                                                <input type="checkbox" name="item2">
-                                                <label>Second item</label>
-                                            </div>
-                                            <div class="ui item checkbox" data-value="item3">
-                                                <input type="checkbox" name="item3">
-                                                <label>Third item</label>
-                                            </div>
-                                            <div class="ui item checkbox" data-value="item4">
-                                                <input type="checkbox" name="item4">
-                                                <label>Fourth item</label>
-                                            </div>
-                                            <div class="ui item checkbox" data-value="item5">
-                                                <input type="checkbox" name="item5">
-                                                <label>Fifth item</label>
-                                            </div>
-                                            <div class="ui item checkbox" data-value="item6">
-                                                <input type="checkbox" name="item6">
-                                                <label>Sixth item</label>
-                                            </div>
-                                            <div class="ui item checkbox" data-value="item7">
-                                                <input type="checkbox" name="item7">
-                                                <label>Seventh item</label>
-                                            </div>
-                                            <div class="ui item checkbox" data-value="item8">
-                                                <input type="checkbox" name="item8">
-                                                <label>Eighth item</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div></form>
                                 <div class="row">
-                                    <div class="wide column center aligned">
-                                        <table class="ui very basic table accordion">
-                                            <thead class="grey ">
-                                            <tr>
-                                                <th class="ui grey small header">Nazwa</th>
-                                                <th class="ui grey small header">Telefon</th>
-                                                <th class="ui grey small header">Ocena</th>
-                                                <th class="ui grey small header">Opis</th>
-                                                <th class="ui grey small header">Data utworzenia</th>
-                                                <th class="ui grey small header center aligned">Akcje</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>Stacja diagnostyki</td>
-                                                <td>123 456 789</td>
-                                                <td>
-                                                    <div class="ui small star rating">
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Ubi Accola nobilis luna est...</td>
-                                                <td>Jan 16, 2017</td>
-                                                <td>
-                                                    <div class=" ui fluid buttons">
-                                                        <button class="ui  blue  button">Edytuj</button>
-                                                        <button class="ui  red  button">Usuń</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Warsztat samochodowy</td>
-                                                <td>Jan 16, 2017 at 6:36</td>
-                                                <td>
-                                                    <div class="ui small star rating">
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon "></i>
-                                                        <i class="star icon"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Accola Ubi nobilis luna est...</td>
-                                                <td>Jan 16, 2017</td>
-                                                <td>
-                                                    <div class=" ui fluid buttons">
-                                                        <button class="ui  blue  button">Edytuj</button>
-                                                        <button class="ui  red  button">Usuń</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                    <table class="ui  table" >
+                                        <thead class="grey ">
+                                        <tr>
+                                            <th class="ui grey small header">Nazwa</th>
+                                            <th class="ui grey small header">Telefon</th>
+                                            <th class="ui grey small header">Ocena</th>
+                                            <th class="ui grey small header">Opis</th>
+                                            <th class="ui grey small header">Data utworzenia</th>
+                                            <th class="ui grey small header center aligned">Akcje</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Stacja diagnostyki</td>
+                                            <td>123 456 789</td>
+                                            <td>
+                                                <div class="ui small star rating">
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon"></i>
+                                                </div>
+                                            </td>
+                                            <td>Ubi Accola nobilis luna est...</td>
+                                            <td>Jan 16, 2017</td>
+                                            <td>
+                                                <div class=" ui fluid buttons">
+                                                    <button class="ui  blue  button offer-edit-btn">Edytuj</button>
+                                                    <button class="ui  red  button  offer-delete-btn">Usuń</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Warsztat samochodowy</td>
+                                            <td>Jan 16, 2017 at 6:36</td>
+                                            <td>
+                                                <div class="ui small star rating">
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon "></i>
+                                                    <i class="star icon"></i>
+                                                </div>
+                                            </td>
+                                            <td>Accola Ubi nobilis luna est...</td>
+                                            <td>Jan 16, 2017</td>
+                                            <td>
+                                                <div class=" ui fluid buttons">
+                                                    <button class="ui  blue  button offer-edit-btn">Edytuj</button>
+                                                    <button class="ui  red  button  offer-delete-btn">Usuń</button>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-                                            <tr>
-                                                <td>Wymiana maglownicy</td>
-                                                <td>321 456 789</td>
-                                                <td>
-                                                    <div class="ui small star rating">
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon "></i>
-                                                        <i class="star icon"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Accola Ubi nobilis luna est...</td>
-                                                <td>Marzec 16, 2017 at 6:36</td>
-                                                <td>
-                                                    <div class=" ui fluid buttons">
-                                                        <button class="ui  blue  button">Edytuj</button>
-                                                        <button class="ui  red  button">Usuń</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Stacja diagnostyki</td>
-                                                <td>123 456 789</td>
-                                                <td>
-                                                    <div class="ui small star rating">
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon yellow"></i>
-                                                        <i class="star icon"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Ubi Accola nobilis luna est...</td>
-                                                <td>Jan 16, 2017</td>
-                                                <td>
-                                                    <div class=" ui fluid buttons eq">
-                                                        <button class="ui  blue  button">Edytuj</button>
-                                                        <button class="ui  red  button">Usuń</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
+                                        <tr>
+                                            <td>Wymiana maglownicy</td>
+                                            <td>321 456 789</td>
+                                            <td>
+                                                <div class="ui small star rating">
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon "></i>
+                                                    <i class="star icon"></i>
+                                                </div>
+                                            </td>
+                                            <td>Accola Ubi nobilis luna est...</td>
+                                            <td>Marzec 16, 2017 at 6:36</td>
+                                            <td>
+                                                <div class=" ui fluid buttons">
+                                                    <button class="ui  blue  button offer-edit-btn">Edytuj</button>
+                                                    <button class="ui  red  button  offer-delete-btn">Usuń</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stacja diagnostyki</td>
+                                            <td>123 456 789</td>
+                                            <td>
+                                                <div class="ui small star rating">
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon yellow"></i>
+                                                    <i class="star icon"></i>
+                                                </div>
+                                            </td>
+                                            <td>Ubi Accola nobilis luna est...</td>
+                                            <td>Jan 16, 2017</td>
+                                            <td>
+                                                <div class=" ui fluid buttons eq">
+                                                    <button class="ui  blue  button offer-edit-btn">Edytuj</button>
+                                                    <button class="ui  red  button  offer-delete-btn">Usuń</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+                                    
                                 <!--PAGINATION-->
                                 <div class="row">
                                     <div class="wide column right aligned">
@@ -343,26 +299,24 @@
                             </div>
                             <!--END pierwszy styl-->
                             
-                            
-                            
                             <!--Drugi styl-->
                             <div class="ui grid" style="margin-bottom: 20px; margin-top: 40px;">
                                 <div class="row">
                                     <div class="left floated column left aligned ui dividing header">
                                         <div class="ui grid">
-                                            <div class="nine wide column left floated">
-                                                <h1 class="left floated column ">
+                                            <div class="eight wide column left floated">
+                                                <h1 class="">
                                                     Moje oferty 2
                                                 </h1>
                                             </div>
-                                            <div class="three wide column right aligned">
+                                            <div class="eight wide column right aligned">
                                                 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ui  grid margin-bottom ui">
+                            <div class="ui  grid margin-bottom">
                                 <div class="row center middle aligned ">
                                     <div class="one wide column">
                                         <i class=" ui grey small chevron right icon"></i>
@@ -603,15 +557,85 @@
 
                         <!--TELEFONY-->
                         <div class="tab-content">
-                            <div class="ui grid">
+                            <div class="ui grid" style="margin-bottom: 50px;">
                                 <div class="row">
                                     <div class="left floated column left aligned ui dividing header">
-                                        <h1 class="left floated column">
-                                            Telefony
-                                        </h1>
+                                        <div class="ui grid">
+                                            <div class="nine wide column left floated">
+                                                <h1 class="left floated column ">
+                                                    Biling
+                                                </h1>
+                                            </div>
+                                            <div class="three wide column right aligned">
+                                                <button class="button-edit button primary billing-edit">
+                                                    Edytuj Billing
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="ui grid margin-bottom">
+                                <div class="row">
+                                    <div class="wide column center aligned">
+                                        <table class="ui very basic table">
+                                            <thead class="grey">
+                                            <tr>
+                                                <th class="ui grey small header">Rodzaj aktywności</th>
+                                                <th class="ui grey small header">Data</th>
+                                                <th class="ui grey small header">Długość</th>
+                                                <th class="ui grey small header">Voip </th>
+                                                <th class="ui grey small header">Numer telefonu</th>
+                                                <th class="ui grey small header">Koszt</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>Styczeń 21, 2017 at 6:36</td>
+                                                <td>-</td>
+                                                <td>123456779</td>
+                                                <td>346654432</td>
+                                                <td>30gr</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rozmowa</td>
+                                                <td>Marzec 16, 2017 at 16:36</td>
+                                                <td>1 godz. 30 min</td>
+                                                <td>123456789</td>
+                                                <td>312343672</td>
+                                                <td>29zł</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--<div class="row">
+                                    <div class="six wide column left floated">
+                                        <div class="ui card">
+                                            <div class="content">
+                                                <div class="header left aligned">
+                                                    <div class="left aligned">
+                                                        E- mail
+                                                    </div>
+                                                    <div class="right aligned">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                dasdasd dasd
+                                                asda
+                                                da
+                                                sd
+                                                asd
+                                                a
+                                                dasdasdasdasdasdas
+                                                das
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
                             </div>
                         </div>
                         <!--END TELEFONY-->
@@ -1128,7 +1152,7 @@
                                 <div class="field">
                                     <label>Adres</label>
                                     <div class="fields">
-                                        <div class="ten wide field">
+                                        <div class="twelve wide field">
                                             <input type="text" name="shipping[address]" placeholder="Adres"
                                                    value="Ketlinga">
                                         </div>
@@ -1225,9 +1249,10 @@
                             </form>
                         </div>
                         <!--END PROFIL UZYTKOWNIKA-->
+                        
+                        <!----------END CONTENT TABS START------------>
                     </div>
                 </section>
-            </div>
         </div>
     </div>
 </div>
@@ -1463,7 +1488,53 @@
                 </select>
             </div>
             
-                
+            <div class="field">
+                    <div class="ui basic right labeled dropdown icon button marks-checkbox2">
+                        <i class="dropdown icon"></i>
+                        <span class="ui tiny header">Filter</span>
+                        <div class="menu">
+                            <div class="ui icon search input">
+                                <i class="search icon"></i>
+                                <input type="text" name="Search" placeholder="Search&hellip;">
+                            </div>
+                            <div class="scrolling menu">
+                                <div class="ui item checkbox" data-value="item1">
+                                    <input type="checkbox" name="item1">
+                                    <label>First item</label>
+                                </div>
+                                <div class="ui item checkbox" data-value="item2">
+                                    <input type="checkbox" name="item2">
+                                    <label>Second item</label>
+                                </div>
+                                <div class="ui item checkbox" data-value="item3">
+                                    <input type="checkbox" name="item3">
+                                    <label>Third item</label>
+                                </div>
+                                <div class="ui item checkbox" data-value="item4">
+                                    <input type="checkbox" name="item4">
+                                    <label>Fourth item</label>
+                                </div>
+                                <div class="ui item checkbox" data-value="item5">
+                                    <input type="checkbox" name="item5">
+                                    <label>Fifth item</label>
+                                </div>
+                                <div class="ui item checkbox" data-value="item6">
+                                    <input type="checkbox" name="item6">
+                                    <label>Sixth item</label>
+                                </div>
+                                <div class="ui item checkbox" data-value="item7">
+                                    <input type="checkbox" name="item7">
+                                    <label>Seventh item</label>
+                                </div>
+                                <div class="ui item checkbox" data-value="item8">
+                                    <input type="checkbox" name="item8">
+                                    <label>Eighth item</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>   
             <div class="fields">
                 <div class="field">
                     <label>Opis oferty</label>
@@ -1472,15 +1543,11 @@
             </div>
             <div class="actions center aligned center floated">
                 <div class="fluid ui buttons">
-                    <!--<button class="ui blue  button">Zapisz</button>-->
-                    <!--<button class="ui red  button">Anuluj</button>-->
+                    <button class="ui blue  button" style="height: 4em">Zapisz</button>
+                    <button class="close ui red deny button">Anuluj</button>
                 </div>
-                <button type="submit" class="button-add modal-save ui submit " tabindex="0">Zapisz</button>
-                <!--<div class="ui error message"><ul class="list"><li>Special Field must have a value</li></ul></div>-->
-                <!--<div class="button-add modal-save red" tabindex="0" >Zapisz</div>-->
-                <!--<div class="ui reset button">Reset</div>-->
-                <!--<div class="ui clear button">Clear</div>-->
-                <!--<div class="button-add modal-cancel" tabindex="0" >Zapisz</div>-->
+                <!--<button type="submit" class="button-add modal-save ui submit " tabindex="0">Zapisz</button>-->
+
             </div>
             <!--<div class="button-add modal-btn" tabindex="0" style="width: 20em; height: 3em">Zapisz</div>-->
         </form>
@@ -1488,10 +1555,172 @@
 </div>
 <!--END MODAL OFFER ADD-->
 
+<!--MODAL OFFER EDIT-->
+<div class="ui large modal offer-edit center aligned center floated">
+    <i class="close icon"></i>
+    <h1 class="center floated column header">
+        Edytuj oferte
+    </h1>
+    <div class="content">
+        <form class="ui equal width form error " >
+            <div class="two fields">
+                <div class="field left-field">
+                    <label>Nazwa</label>
+                    <input type="text" placeholder="Nazwa" value="Stacja diagnostyki" name="name">
+                </div>
+                <div class="field">
+                    <label>Telefon</label>
+                    <input type="text" placeholder="Telefon" value="543 123 653" name="phone">
+                </div>
+                <!--<div class="field">
+                    <label>Państwo</label>
+                    <div class="ui fluid search selection dropdown">
+                        <input type="hidden" name="country">
+                        <i class="dropdown icon"></i>
+                        <input class="search" autocomplete="off" tabindex="0"><div class="default text">Wybierz państwo</div>
+                        <div class="menu" tabindex="-1">
+                            <div class="item" data-value="uz"><i class="uz flag"></i>Uzbekistan</div>
+                            <div class="item" data-value="vu"><i class="vu flag"></i>Vanuatu</div>
+                            <div class="item" data-value="va"><i class="va flag"></i>Vatican City</div>
+                            <div class="item" data-value="ve"><i class="ve flag"></i>Venezuela</div>
+                            <div class="item" data-value="vn"><i class="vn flag"></i>Vietnam</div>
+                            <div class="item" data-value="wf"><i class="wf flag"></i>Wallis and Futuna</div>
+                            <div class="item" data-value="eh"><i class="eh flag"></i>Western Sahara</div>
+                            <div class="item" data-value="ye"><i class="ye flag"></i>Yemen</div>
+                            <div class="item" data-value="zm"><i class="zm flag"></i>Zambia</div>
+                            <div class="item" data-value="zw"><i class="zw flag"></i>Zimbabwe</div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="field">
+                <div class="fields">
+                    <div class="seven wide field">
+                        <label>Adres</label>
+                        <input type="text" placeholder="Adres" value="Ketlinga " name="adress">
+                    </div>
+                    <div class="three wide field">
+                        <label>Numer</label>
+                        <input type="text" placeholder="Numer"  value="1" name="adress-code">
+                    </div>
+                    <div class="six wide field">
+                        <label>Lokalizacja</label>
+                        <div class="ui selection dropdown" tabindex="0">
+                            <input type="hidden" name="localization" value="kraków">
+                            <div class="default text">Wybierz lokalizacje</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu" tabindex="-1">
+                                <div class="item ">
+                                    Kraków
+                                </div>
+                                <div class="item">
+                                    Lublin
+                                </div>
+                                <div class="item">
+                                    Warszawa
+                                </div>
+                                <div class="item">
+                                    Gdańsk
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="field left-field">
+                    <label>Kod pocztowy</label>
+                    <input type="text" placeholder="Kod pocztowy" value="32-235" name="zip">
+                </div>
+                <div class="field">
+                    <label>Miejscowość</label>
+                    <input type="text" placeholder="Miejscowość" value="Kraków" name="city">
+                </div>
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <label>Wybierz marki</label>
+                    <select multiple="" class="ui dropdown" name="marks">
+                        <option value="">Marki</option>
+                        <option selected="selected" value="AF">Audi</option>
+                        <option selected="selected" value="AX">BMW</option>
+                        <option value="AL">Seat</option>
+                        <option value="1">Volvo</option>
+                        <option value="2">Mercedes</option>
+                        <option value="3">VW</option>
+                        <option value="4">Toyota</option>
+                        <option value="5">Mazda</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Wybierz kategorie</label>
+                    <select multiple="" class="ui dropdown" name="categories">
+                        <option value="">Kategorie</option>
+                        <option value="AF">Wymiana wtryskiwaczy</option>
+                        <option selected="selected" value="AX">Wymiana tarcz hamulcowych</option>
+                        <option value="AL">Wymiana linki ręcznego</option>
+                        <option value="1">Wymiana pompy hamulcowej</option>
+                        <option selected="selected" value="2">Wymiana przewodu wspomagania</option>
+                        <option value="3">Elektrohydrauliczna pompa wspomagania EPS</option>
+                        <option value="4">Wymiana oleju w silniku</option>
+                        <option selected="selected" value="5">Wymiana oleju w skrzyni biegów</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <div class="field">
+                    <label style="margin-bottom: -12px;">Wybierz Zdjęcia</label>
+                </div>
+                <div class="field ui action input">
+
+                    <input type="text" id="" placeholder="Wbierz zdjęcia" name="photo">
+                    <label for="attachmentName" class="ui icon button btn-file">
+                        <i class="attach icon"></i>
+                        <input type="file" id="" name="attachmentName" style="display: none">
+                    </label>
+                </div>
+            </div>
+
+            <div class="fields">
+                <div class="field">
+                    <label>Opis oferty</label>
+                    <textarea class="light-grey" name="description">Clabulare, lamia, et cursus. Pius, nobilis tumultumques vix resuscitabo de altus, placidus clinias.Hercle, abactus primus!, velox spatii!</textarea>
+                </div>
+            </div>
+            <div class="actions center aligned center floated">
+                <div class="fluid ui buttons">
+                    <button class="ui blue  button" style="height: 4em">Zapisz</button>
+                    <button class="ui red deny button">Anuluj</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--END MODAL OFFER EDIT-->
+
+<!--MODAL OFFER DELETE-->
+<div class="ui small test modal offer-delete transition ">
+    <div class="header">
+        Usuń oferte
+    </div>
+    <div class="content">
+        <p>Czy jesteś pewny usunąć oferte</p>
+    </div>
+    <div class="actions">
+        <div class="ui negative button">
+            Nie
+        </div>
+        <div class="ui positive right labeled icon button">
+            Tak
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+<!-- END MODAL OFFER DELETE-->
 <!--FOOTER -->
-<div class="ui footer segment">
-    <div class="ui center aligned container">
-        <div class="ui horizontal small divided link list">
+<div class="ui inverted footer segment">
+    <div class="ui inverted center aligned container">
+        <div class="ui inverted horizontal small divided link list">
             <a class="item" href="#">Site Map</a>
             <a class="item" href="#">Contact Us</a>
             <a class="item" href="#">Terms and Conditions</a>

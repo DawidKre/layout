@@ -4,15 +4,18 @@ $(function () {
     // $.site('enable console'); // re-enables window.console functionality
 
 // enable all debug
-    $.site('enable debug');
-
-// disable all debug
-    $.site('enable debug');
+//     $.site('enable debug');
+//
+// // disable all debug
+//     $.site('enable debug');
 
 
     // normalizes console and requestAnimationFrame DOM methods
     $.site('normalize');
     
+    $('.ui.marks-checkbox').dropdown({
+        action: 'nothing'
+    });
 
     /*
     $.fn.checkbox.settings = {
@@ -23,11 +26,13 @@ $(function () {
     };*/
 
 
-    phoneAdd = $('#phone-add');
-    offerAdd = $('#offer-add');
-    billingEdit = $('#billing-edit');
-    emailEdit = $('#email-edit');
-    passwordEdit = $('#password-edit');
+    var phoneAdd = $("#phone-add");
+    var offerAdd = $('#offer-add');
+    var offerEdit = $('.offer-edit-btn');
+    var offerDelete = $('.offer-delete-btn');
+    var billingEdit = $('.billing-edit');
+    var emailEdit = $('#email-edit');
+    var passwordEdit = $('#password-edit');
 
     
     billingEdit.click(function () {
@@ -54,14 +59,24 @@ $(function () {
         ;
     });
 
-    $('.ui.marks-checkbox').dropdown({
-        action: 'nothing'
-    });
+
     $('.ui.checkbox').checkbox();
 
     
     offerAdd.click(function () {
         $('.offer-add')
+            .modal('show')
+        ;
+    });
+
+    offerEdit.click(function () {
+        $('.offer-edit')
+            .modal('show')
+        ;
+    });
+
+    offerDelete.click(function () {
+        $('.offer-delete')
             .modal('show')
         ;
     });
