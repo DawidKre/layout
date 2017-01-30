@@ -1,9 +1,34 @@
 
 
-body {
-    background-color: #f7f7f7;
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
 }
 
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 60px;
+    background-color: #eceff1;
+}
+
+nav {
+    margin-bottom: 0px !important;
+}
+body > .segment > .container > .row {
+    padding-top: 0;
+}
+body > .segment > .container > .row > .wrapper {
+    padding-top: 0;
+}
 .wrapper {
     width: 100%;
     margin: 0px auto;
@@ -32,7 +57,9 @@ body {
     top: 0;
     padding: 0;
 }
-
+#v-nav > .tab-content > .first-tab {
+    margin-bottom: 20px;
+}
 #v-nav > ul > li {
     border-radius: 3px 0 0 3px;
     text-align: left;
@@ -192,6 +219,10 @@ body {
     touch-action: manipulation;
     text-align: center;
 }
+.profile-btn{
+    width: 20em; 
+    height: 3em;
+}
 .button-add-width {
     max-width: 150px !important;
 }
@@ -267,7 +298,9 @@ input, textarea, .selection , .dropdown {
 .margin-bottom {
     margin-bottom: 10px;
 }
-
+.segment-margin {
+    margin-bottom: -20px;
+}
 .ui.accordion .active.title .chevron.right.icon,
 .ui.accordion .accordion .active.title .chevron.right.icon {
     -webkit-transform: rotate(90deg);
@@ -280,6 +313,10 @@ input, textarea, .selection , .dropdown {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     transition-duration: 0.4s;
+}
+
+.login-image {
+    margin-top: -100px;
 }
 
 

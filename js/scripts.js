@@ -3,9 +3,9 @@ $(function () {
     // $.site('disable console'); // disables window.console functionality
     // $.site('enable console'); // re-enables window.console functionality
 
-// enable all debug
-//     $.site('enable debug');
-//
+
+    // $.site('enable debug');
+
 // // disable all debug
 //     $.site('enable debug');
 
@@ -26,6 +26,7 @@ $(function () {
     };*/
 
 
+    var loginForm = $(".login-form-modal");
     var phoneAdd = $("#phone-add");
     var offerAdd = $('#offer-add');
     var offerEdit = $('.offer-edit-btn');
@@ -33,7 +34,12 @@ $(function () {
     var billingEdit = $('.billing-edit');
     var emailEdit = $('#email-edit');
     var passwordEdit = $('#password-edit');
-
+    
+    loginForm.click(function () {
+        $('.login-form')
+            .modal('show')
+        ;
+    });
     
     billingEdit.click(function () {
         $('.billing-edit')
@@ -82,20 +88,18 @@ $(function () {
     });
     
     $('.ui.accordion').accordion('refresh');
+    $('.login-dropdown').dropdown();
     
     $('.ui.dropdown').dropdown();
+    
     var items = $('#v-nav>ul>li').each(function () {
         $(this).click(function () {
             //remove previous class and add it to clicked tab
             items.removeClass('current');
             $(this).addClass('current');
-
-            //hide all content divs and show current one
-            
             $('#v-nav>div.tab-content').hide().eq(items.index($(this))).show();
 
             window.location.hash = $(this).attr('tab');
-            
         });
     });
 
@@ -116,24 +120,5 @@ $(function () {
         tabContents.hide();
         tabContents.eq(counter).show();
     }
-    
-
-    // Bind the event hashchange, using jquery-hashchange-plugin
-    // $(window).hashchange(function () {
-    //     showTab(location.hash.replace("#", ""));
-    // });
-
-    // Trigger the event hashchange on page load, using jquery-hashchange-plugin
-    // $(window).hashchange();
-    
-
 });
-/*
 
-function showModal() {
-    $("#billing-edit").click(function () {
-        $('.ui.modal')
-            .modal('show')
-        ;
-    });
-}*/

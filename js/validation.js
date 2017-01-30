@@ -1,7 +1,7 @@
 $(function () {
 
     $( '#offer-form' )
-        .form( {
+        .form({
             fields: {
                 name: {
                     identifier: 'name',
@@ -100,6 +100,41 @@ $(function () {
             },
             inline: true,
             on: 'submit'
-        } )
+        })
+    ;
+
+    $('#form-login')
+        .form({
+            fields: {
+                email: {
+                    identifier  : 'email',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Podaj swój E-mail'
+                        },
+                        {
+                            type   : 'email',
+                            prompt : 'Wprowadź poprawny adres E-mail'
+                        }
+                    ]
+                },
+                password: {
+                    identifier  : 'password',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Podaj hasło'
+                        },
+                        {
+                            type   : 'length[6]',
+                            prompt : 'Twoje hasło powinno być dłuższe od 6 znaków'
+                        }
+                    ]
+                }
+            },
+            inline: true,
+            on: 'submit'
+        })
     ;
 } );
