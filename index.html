@@ -1360,9 +1360,260 @@
         Dodaj nową oferte
     </h1>
     <div class="content">
-        <form class="ui equal width form error" id="offer-form">
-            <div class="two fields">
-                <div class="field left-field">
+  <!--      <form class="ui form error grid" id="offer-form">
+            <div class="row">
+                <h4 class="three wide column ui right aligned inline-form-label">Nazwa firmy * </h4>
+                <div class="field thirteen wide column left floated">
+                    <input type="text" name="name" placeholder="Podaj nazwe firmy">
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="three wide column right floated  ui right aligned inline-form-label" style="margin-top: 10px;">Branża* </h4>
+                <div class="field thirteen wide column left floated">
+                    <div class="ui selection dropdown" tabindex="0">
+                        <input type="hidden" name="localization">
+                        <div class="default text">Wybierz branże</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu" tabindex="-1">
+                            <div class="item">
+                                Motoryzacja
+                            </div>
+                            <div class="item">
+                                Zdrowie i Uroda
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row field">
+                <h4 class="three wide column ui right aligned inline-form-label">Adres firmy * </h4>
+                <div class="field thirteen wide column left floated">
+                    <input class="" type="text" placeholder="Podaj adres firmy">
+                </div>
+            </div>
+            <div class="row field">
+                <h4 class="three wide column  ui right aligned inline-form-label">E-mail * </h4>
+                <div class="field thirteen wide column left floated">
+                    <input class="" type="email" placeholder="Adres E-mail">
+                </div>
+            </div>
+            <div class="row field">
+                <h4 class="three wide column ui right aligned inline-form-label">Telefon * </h4>
+                <div class="field thirteen wide column left floated">
+                    <input class="thirteen wide column " type="text" placeholder="Numer telefonu">
+                </div>
+            </div>
+            <div class="row field">
+                <h4 class="three wide column ui right aligned inline-form-label">Opis firmy</h4>
+                <div class="field thirteen wide column left floated">
+                    <textarea class="thirteen wide column " placeholder="Opis firmy"></textarea>
+                </div>
+            </div>
+            <div class="row actions center aligned center floated">
+                <div class="fluid ui buttons">
+                    <button class="ui blue  button" style="height: 4em">Zapisz</button>
+                    <button class="close ui red deny button">Anuluj</button>
+                </div>
+                &lt;!&ndash;<button type="submit" class="button-add modal-save ui submit " tabindex="0">Zapisz</button>&ndash;&gt;
+            </div>
+        </form>
+        <form class="ui form equal width error " id="offer-form2">
+            <div class="field ">
+                <label>Nazwa</label>
+                <input type="text" placeholder="Nazwa" name="name">
+            </div>
+            <div class="field">
+                <label>Telefon</label>
+                <input type="text" placeholder="Telefon" name="phone">
+            </div>
+            <div class="field">
+                <label>Branża</label>
+                <div class="ui selection dropdown" tabindex="0">
+                    <input type="hidden" name="localization">
+                    <div class="default text">Wybierz Branże</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu" tabindex="-1">
+                        <div class="item">
+                            Kraków
+                        </div>
+                        <div class="item">
+                            Lublin
+                        </div>
+                        <div class="item">
+                            Warszawa
+                        </div>
+                        <div class="item">
+                            Gdańsk
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen column wide field">
+                <div class=" fields">
+                    <div class="seven wide field">
+                        <label class="left aligned left floated">Adres</label>
+                        <input type="text" placeholder="Adres" name="adress">
+                    </div>
+                    <div class="three wide field">
+                        <label>Numer</label>
+                        <input type="text" placeholder="Numer" name="adress-code">
+                    </div>
+                    <div class="six wide field">
+                        <label>Lokalizacja</label>
+                        <div class="ui selection dropdown" tabindex="0">
+                            <input type="hidden" name="localization">
+                            <div class="default text">Wybierz lokalizacje</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu" tabindex="-1">
+                                <div class="item">
+                                    Kraków
+                                </div>
+                                <div class="item">
+                                    Lublin
+                                </div>
+                                <div class="item">
+                                    Warszawa
+                                </div>
+                                <div class="item">
+                                    Gdańsk
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Kod pocztowy</label>
+                <input type="text" placeholder="Kod pocztowy" name="zip">
+            </div>
+            <div class="field">
+                <label>Miejscowość</label>
+                <input type="text" placeholder="Miejscowość" name="city">
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <label>Wybierz marki</label>
+                    <select multiple="" class="ui dropdown" name="marks">
+                        <option value="">Marki</option>
+                        <option value="AF">Audi</option>
+                        <option value="AX">BMW</option>
+                        <option value="AL">Seat</option>
+                        <option value="1">Volvo</option>
+                        <option value="2">Mercedes</option>
+                        <option value="3">VW</option>
+                        <option value="4">Toyota</option>
+                        <option value="5">Mazda</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Wybierz kategorie</label>
+                    <select multiple="" class="ui dropdown" name="categories">
+                        <option value="">Kategorie</option>
+                        <option value="AF">Wymiana wtryskiwaczy</option>
+                        <option value="AX">Wymiana tarcz hamulcowych</option>
+                        <option value="AL">Wymiana linki ręcznego</option>
+                        <option value="1">Wymiana pompy hamulcowej</option>
+                        <option value="2">Wymiana przewodu wspomagania</option>
+                        <option value="3">Elektrohydrauliczna pompa wspomagania EPS</option>
+                        <option value="4">Wymiana oleju w silniku</option>
+                        <option value="5">Wymiana oleju w skrzyni biegów</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <div class="field">
+                    <label style="margin-bottom: -12px;">Wybierz Zdjęcia</label>
+                </div>
+                <div class="field ui action input">
+
+                    <input type="text" id="_attachmentName" placeholder="Wbierz zdjęcia" name="photo">
+                    <label for="attachmentName" class="ui icon button btn-file">
+                        <i class="attach icon"></i>
+                        <input type="file" id="attachmentName" name="attachmentName" style="display: none">
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <label>Wybierz kategorie</label>
+                <select multiple="" class="ui dropdown" name="categories">
+                    <option value="">Kategorie</option>
+                    <option value="AF">Wymiana wtryskiwaczy</option>
+                    <option value="AX">Wymiana tarcz hamulcowych</option>
+                    <option value="AL">Wymiana linki ręcznego</option>
+                    <option value="1">Wymiana pompy hamulcowej</option>
+                    <option value="2">Wymiana przewodu wspomagania</option>
+                    <option value="3">Elektrohydrauliczna pompa wspomagania EPS</option>
+                    <option value="4">Wymiana oleju w silniku</option>
+                    <option value="5">Wymiana oleju w skrzyni biegów</option>
+                </select>
+            </div>
+            <div class="field">
+                <div class="ui basic right labeled dropdown icon button marks-checkbox2">
+                    <i class="dropdown icon"></i>
+                    <span class="ui tiny header">Filter</span>
+                    <div class="menu">
+                        <div class="ui icon search input">
+                            <i class="search icon"></i>
+                            <input type="text" name="Search" placeholder="Search&hellip;">
+                        </div>
+                        <div class="scrolling menu">
+                            <div class="ui item checkbox" data-value="item1">
+                                <input type="checkbox" name="item1">
+                                <label>First item</label>
+                            </div>
+                            <div class="ui item checkbox" data-value="item2">
+                                <input type="checkbox" name="item2">
+                                <label>Second item</label>
+                            </div>
+                            <div class="ui item checkbox" data-value="item3">
+                                <input type="checkbox" name="item3">
+                                <label>Third item</label>
+                            </div>
+                            <div class="ui item checkbox" data-value="item4">
+                                <input type="checkbox" name="item4">
+                                <label>Fourth item</label>
+                            </div>
+                            <div class="ui item checkbox" data-value="item5">
+                                <input type="checkbox" name="item5">
+                                <label>Fifth item</label>
+                            </div>
+                            <div class="ui item checkbox" data-value="item6">
+                                <input type="checkbox" name="item6">
+                                <label>Sixth item</label>
+                            </div>
+                            <div class="ui item checkbox" data-value="item7">
+                                <input type="checkbox" name="item7">
+                                <label>Seventh item</label>
+                            </div>
+                            <div class="ui item checkbox" data-value="item8">
+                                <input type="checkbox" name="item8">
+                                <label>Eighth item</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <label>Opis oferty</label>
+                    <textarea class="light-grey" name="description"></textarea>
+                </div>
+            </div>
+            <div class="actions center aligned center floated">
+                <div class="fluid ui buttons">
+                    <button class="ui blue  button" style="height: 4em">Zapisz</button>
+                    <button class="close ui red deny button">Anuluj</button>
+                </div>
+                &lt;!&ndash;<button type="submit" class="button-add modal-save ui submit " tabindex="0">Zapisz</button>&ndash;&gt;
+            </div>
+            &lt;!&ndash;<div class="button-add modal-btn" tabindex="0" style="width: 20em; height: 3em">Zapisz</div>&ndash;&gt;
+        </form>-->
+        <form class="ui  form error" id="offer-form">
+            
+            <div class="two inline fields">
+                <div class="field inline left-field">
                     <label>Nazwa</label>
                     <input type="text" placeholder="Nazwa" name="name">
                 </div>
